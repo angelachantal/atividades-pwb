@@ -33,7 +33,7 @@ function mostrar_n1(){
   n1 = getById("questao_2.1").value;
   let resposta_n1 = getById('entrada_2.1');
   resposta_n1.innerHTML= n1;
-}
+} 
 
 let botao_n2 = getById("botao_2.2");
 botao_n2.addEventListener('click', mostrar_n2);
