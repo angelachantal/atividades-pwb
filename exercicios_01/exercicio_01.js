@@ -81,7 +81,49 @@ function maior_menor(){
 }
 
 // Questão 3
+let botao_tabuada = getById('botao_tabuada');
+
+botao_tabuada.addEventListener('click', calc_tabuada);
+
+function calc_tabuada(){
+  const n = parseInt(getById('questao_3').value);
+  let resposta_3 = getById('resposta_3');
+
+  if (!isNaN(n) && Number.isInteger(n) && n > 0){
+    let tabuada = `<p>Tabuada de ${n}:<p>`;
+    for (let i = 1; i <= 10; i++) {
+      tabuada += `${n} + ${i} = ${n + i}<br>`;
+    }
+    resposta_3.innerHTML = tabuada
+  } else {
+  resposta_3.innerHTML = "Por favor, insira um número inteiro positivo."
+  }
+}
+
 // Questão 4
+let popA = 80000;
+let popB = 200000;
+let txA = 0.03;
+let txB = 0.015;
+let ano = 0;
+
+while (popA <= popB){
+  popA += (txA * popA)
+  popB += (txB * popB)
+  ano += 1
+}
+
+let resposta_4 = getById('resposta_4');
+resposta_4.innerHTML = ano
+
 // Questão 5
+const numeros = [3, 7, 3, 2, 7, 10, 2, 15, 10, 20];
+const numerosUnicos = [... new Set(numeros)];
+
+let resposta_5 = getById('resposta_5');
+resposta_5.innerHTML = numerosUnicos;
+
 // Questão 6
+
+
 // Questão 7
