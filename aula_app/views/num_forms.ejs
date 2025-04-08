@@ -9,10 +9,11 @@
     <div>
         <h1>Soma dos números</h1>
     </div>
-    <form action="/numeros" method="post">
+    <form action="/numeros" method="post"> <!-- Define que os dados do formulário serão enviados para a rota (página) /numeros e especifica que o método HTTP usado será POST. -->
         <label for="">Digite os números a serem somados.</label>
         <br>
-        <input type="number" name="numero1" placeholder="Primeiro número">
+        <input type="number" name="numero1" placeholder="Primeiro número">  
+        <!-- name="numero1": Define o nome do campo, usado para identificar o valor no servidor. -->
         <br>
         <input type="number" name="numero2" placeholder="Segundo número">
         <br>
