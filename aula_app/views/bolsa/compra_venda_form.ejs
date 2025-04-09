@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Compra e Venda</title>
+</head>
+<body>
+    <h1>Cadastro de Compra e Venda</h1>
+    <div>
+        <h2>Cadastrar nova operação:</h2>
+        <form action="/bolsa/compra_venda" method="post">
+            <label for="">Data:</label>
+            <input type="date" name="data" id="" placeholder="Data">
+            <br><br>
+            <label for="">Código:</label>
+            <select name="codigo" id="">
+                <option value="ITSA4">ITSA4</option>
+                <option value="BBSE3">BBSE3</option>
+            </select>
+            <br><br>
+            <label for="">Tipo:</label>
+            <input type="radio" name="tipo" id="comprar" placeholder="Tipo">
+            <label for="comprar">Compra</label>
+            <input type="radio" name="tipo" id="vender" placeholder="Tipo">
+            <label for="vender">Venda</label>
+            <br><br>
+            <label for="">Quantidade</label>
+            <input type="number" name="quantidade" id="" placeholder="Quantidade">
+            <br><br>
+            <label for="">Preço Unitário</label>
+            <input type="number" name="preço" id="" placeholder="Preço Unitário">
+            <br><br>
+            <button>Salvar</button>
+        </form>
+    </div>
+</body>
+</html>
