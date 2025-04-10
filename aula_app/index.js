@@ -7,6 +7,8 @@ const app = express();
 // Definir a porta onde o servidor será executado.
 const port = 3000;
 
+app.use(express.urlencoded({extended: false}))
+
 const bolsa_router = require('./routers/bolsa_routers');
 app.use('/bolsa', bolsa_router);
 
@@ -17,7 +19,6 @@ const ola_router = require('./routers/ola_routers');
 app.use('/ola', ola_router)
 
 
-app.use(express.urlencoded({extended: false}))
 
 // Definir o diretório onde os templates (arquivos .ejs) estão localizados. Aqui, o diretório é chamado views.
 app.set('views', 'views') 

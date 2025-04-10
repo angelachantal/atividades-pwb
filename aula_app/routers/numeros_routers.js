@@ -14,7 +14,7 @@ router.post('/numeros', (req, res) =>{
     let numero2 = Number(req.body.numero2);
     let numero3 = Number(req.body.numero3);
     let resultado = numero1 + numero2 + numero3
-    res.render('numeros/num_soma', {numero1: numero1, numero2: numero2, numero3: numero3})
+    res.render('numeros/num_soma', {numero1: numero1, numero2: numero2, numero3: numero3, resultado: resultado})
   }) 
   
 
